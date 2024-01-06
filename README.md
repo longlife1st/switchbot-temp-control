@@ -24,7 +24,7 @@ to custom mode in our case, but it can be changed to press mode with minimal cha
 
 ### Preliminary setup (do it once)
 
-- Import the switchbot_template.xlsx file to your Google Sheets, copy the long ID included in the URL and paste it to the `SPREADSHEET_ID` value in const.js file.
+- Import the [switchbot_template.xlsx](./switchbot_template.xlsx) file to your Google Sheets, copy the long ID included in the URL and paste it to the `SPREADSHEET_ID` value in const.js file.
 - Due to potential issues with number formats, it is recommended to change the spreadsheet settings so that the sheet uses the "United States" locale (but time zone should be your own). You can find the setting in File > Parameters.
 - Push the code in this repository using clasp to your Google Apps Script project.
 - You should now be able to see and enter your project from [Google Apps Script console](https://script.google.com/home). In the created project, you should see three files: `Code.gs`, `const.gs` and `switchbot.gs`.
