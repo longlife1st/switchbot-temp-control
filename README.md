@@ -49,6 +49,7 @@ For this, open the spreadsheet and add one device per line. Here are a few notes
 - The `Device ID` column contains the Switchbot ID of the heating/AC device itself.
 - You can set up to three rules per device. They are based on a schedule (format is `HH:mm~HH:mm`) and a minimum and maximum temperature. If there are no rules, the device is ignored. Rules overlapping days are not supported and rules overlapping each others have not been tested. Make sure the rules make sense.
 - Temperatures are in Celsius.
+- **DO NOT** add more to the file than the necessary lines for each device, as it will likely break the script logic.
 
 Regarding the `DeviceTempId` and `Device ID` values, they can be obtained from Switchbot API. To do so, you can go to the `Code.gs` file and run the `listDevices` function. It will output a JSON file containing the list of all the devices in your account. Check the contents and copy/paste the `deviceId` value corresponding to each of your devices.
 
